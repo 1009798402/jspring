@@ -1,5 +1,6 @@
 package com.jspring.demo.controller;
 
+import com.jspring.demo.JAutowired;
 import com.jspring.demo.service.UserService;
 
 /**
@@ -9,6 +10,7 @@ import com.jspring.demo.service.UserService;
  */
 public class UserController {
 
+  @JAutowired
   private UserService userService;
 
   public UserService getUserService() {
